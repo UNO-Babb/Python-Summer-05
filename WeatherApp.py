@@ -6,7 +6,15 @@
 import WeatherInfo
 
 #Set your key
-WeatherInfo.setKey("6e5e3294fb74c2b9b6b0f97f82a2c646")
+WeatherInfo.setKey("2cecbd80c3163c2ecbf29f8d2b8cfffa")
+WeatherInfo.setCity("Boston")
+
+success = WeatherInfo.updateWeather()
+
+if(success == True):
+  print("It worked")
+else:
+  print("Invalid City")
 
 temp = WeatherInfo.getTemp()
 print(temp)
