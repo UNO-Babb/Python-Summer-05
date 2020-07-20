@@ -1,7 +1,8 @@
-# Homework 1
+# Practical Scripting with Python
+## UNO Summer Techademy
 
 ### OpenWeather API Key
-For this assignment, you will need to be able to read data from the Open Weather Map data source. They have an Application Programming Interface (API) available to developers to access this data. You will need to sign up on the website as a developer.
+For this project, you will need to be able to read data from the Open Weather Map data source. They have an Application Programming Interface (API) available to developers to access this data. You will need to sign up on the website as a developer.
 - [https://openweathermap.org/api](https://openweathermap.org/api)
 - Sign up for the Current weather data service
 - You will get a developer key which is a 32 digit hexadecimal number
@@ -106,9 +107,10 @@ The user should bring an umbrella if it is raining.
 This info will be found in the description.
 Rain Types:
 - mist
-- light rain
+- shower rain
 - rain
-- heavy rain
+- thunderstorm
+
 
 ### Wind speed descriptions
 The Beaufort scale is an empirical measure that relates wind speed to observed conditions at sea or on land. Its full name is the Beaufort wind force scale.[Wikipedia](https://en.wikipedia.org/wiki/Beaufort_scale)

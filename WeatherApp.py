@@ -1,36 +1,65 @@
 #WeatherApp.py
 #Name:
 #Date:
-#Assignment:
 
 import WeatherInfo
 
 #Set your key
-WeatherInfo.setKey("2cecbd80c3163c2ecbf29f8d2b8cfffa")
-WeatherInfo.setCity("Boston")
+def setup(city):
+    WeatherInfo.setKey("6e5e3294fb74c2b9b6b0f97f82a2c646")
+    WeatherInfo.setCity(city)
 
-success = WeatherInfo.updateWeather()
+    #When you call updateWeather() it will retrieve new weather data from the server.
+    #We only need to do this when changing cities or if we have not already called it.
+    success = WeatherInfo.updateWeather()
+    if(success == True):
+      print("It worked")
+    else:
+      print("Invalid City")
 
-if(success == True):
-  print("It worked")
-else:
-  print("Invalid City")
+## Function that will take temperature in Kelvin and convert to Fahrenheit
+def kelvinToFahrenheit(kTemp):
+    return 0
 
-temp = WeatherInfo.getTemp()
-print(temp)
-#Ask the user for their city
+## Function that will return a weather report including:
+## The city, the description, and the humidity
+def report(city, description, humidity):
+    return "CITY REPORT"
 
-#Update the weather with the given city
+## Return the string with the temperature given
+def tempReport(fTemp):
+    return "TEMP REPORT"
 
-#Request any data you need from the WeatherInfo API
+## Return the Beaufort scale speed of the given wind.
+def windToBeaufort(windSpeed):
+    return "Beaufort"
 
-#Process the data
-#convert temperature to fahrenheit,
-#determine wind speed in words
-#decide jacket and umbrella status
 
-#Report to the user the weather of their city
+## Return the string of the wind report including speed and Beaufort
+def windReport(windSpeed):
+    return "SPEED"
 
-#Ask user if they would like another weather report
-#If yes, loop to the top of your program where they are asked for a city.
-#If no, end with a goodbye statement of some sort.
+## Return a string about whether we need an umbrella
+def checkUmbrella(description):
+    return "Umbrella"
+
+## Return a string about whether we need a jacket
+def checkJacket(feelsTemp):
+    return "Jacket"
+
+
+def test():
+    t = 300
+    fTemp = kelvinToFahrenheit(t)
+    print(fTemp)
+
+
+def main():
+    setup("Omaha")
+
+    temp = WeatherInfo.getTemp()
+    print(temp)
+
+
+#main()
+test()

@@ -1,2 +1,2 @@
 language = "python3"
-run = "python3 WeatherApp.py"
+run = "python WeatherApp.py"
