@@ -6,7 +6,7 @@ import WeatherInfo
 
 #Set your key
 def setup(city):
-    WeatherInfo.setKey("6e5e3294fb74c2b9b6b0f97f82a2c646")
+    WeatherInfo.setKey("YOURKEYHERE")
     WeatherInfo.setCity(city)
 
     #When you call updateWeather() it will retrieve new weather data from the server.
